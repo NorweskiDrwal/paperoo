@@ -1,0 +1,10 @@
+html {
+	font-size: 62.5%;
+}
+
+button {
+	-webkit-transition-duration: 0.3s; /* Safari */
+    transition-duration: 0.3s;
+}
+
+

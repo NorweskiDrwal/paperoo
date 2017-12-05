@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Strona Paperoo">
+	<meta name="author" content="Mateusz Sas">
+	<meta name="keywords" content="Tworzenie dokumentów">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Paperoo - Napiszemy to za Ciebie</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+	
+	<link href="assets/css/layout.css" rel="stylesheet">
+	<link href="assets/css/title-theme.css" rel="stylesheet">
+	<link href="assets/css/navbar-theme.css" rel="stylesheet">
+	<link href="assets/css/about-theme.css" rel="stylesheet">
+	<link href="assets/css/service-theme.css" rel="stylesheet">
+	<link href="assets/css/contact-theme.css" rel="stylesheet">
+	<link href="assets/css/login.css" rel="stylesheet">
+	
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+ 	
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	
+  	<script src="/assets/js/login.js"></script>
+  	
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+	
+	<nav class="navbar navbar-fixed-top" id="navbar">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" id="menu-icn">
+					<img src="assets/img/menu-btn.png" id="menu-btn">
+				</button>
+				<a href="#"><img src="assets/img/mini-logo.png" id="mini-logo"></a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#aboutUS">O NAS</a></li>
+					<li><a href="#service">USŁUGI</a></li>
+					<li><a href="#contact">KONTAKT</a></li>
+					<li><a id="myBtn" style="cursor: pointer;">LOGOWANIE</a></li>
+				</ul>
+    		</div>
+		</div>
+	</nav>
+	
+	<div class="jumbotron text-center" id="title-container">
+		<p><img src="assets/img/logo-big.png" id="logo-big"></p>
+		<div><a href="#"><button id="create-btn" type="button">stwórz dokument</button></a></div>
+	</div>
+
+	<div class="container-fluid container-about" id="aboutUS">
+		<div class="row" id="about">
+			<div class="col-sm-5">
+				<h2>O NAS</h2><br>
+				<h4>Czym się zajmujemy?</h4>
+				<h4>
+					Zajmujemy się ułatwianiem ludziom życia :)<br>
+					Czy zastanawiałeś się kiedyś, jak zrobić, żeby te wszystkie nudne podania, dokumenty i pisma pisały się same?<br>
+					My też! I wymyśliliśmy, że ktoś (lub coś) powinien napisać to za nas.<br>
+					Dzięki oferowanemu przez nas rozwiązaniu, w łatwy i przyjemny sposób przygotujesz każde pismo.
+				</h4>
+				<br>
+				<h4>Jak to działa?</h4>
+				<h4>
+					Krótko mówiąc, generuje wybrane dokumenty w taki sposób, aby użytkownik w jak najmniejszym stopniu był zaangażowany w proces pisania dokumentu.<br>
+					Wystarczy, że podasz kluczowe informacje w formularzu i wybierzesz rodzaj dokumentu, a system przygotuje gotowe do druku pismo.<br>
+					Żeby dowiedzieć się więcej, obejrzyj materiał wideo zamieszczony obok, lub napisz do nas.
+				</h4>
+			</div>
+			<div class="col-sm-7" id="video-box"><iframe src="https://www.youtube.com/embed/z0QQ-H7WuGs" frameborder="0" allowfullscreen id="video"></iframe></div>
+		</div>
+	</div>
+	
+	<div class="container-fluid text-center container-carousel">
+		<div class="row" id="container-carousel">
+			<h2>OPINIE NASZYCH UŻYTKOWNIKÓW</h2><br>
+			<div id="myCarousel" class="col-sm-12 carousel slide text-center" data-ride="carousel">
+				<!-- Indicators -->
+				<ol class="carousel-indicators" id="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+				</ol>
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<h4 id="opinion-text">"Ten system jest tak niesamowity, że teraz hobbistycznie rozsyłam pisma w różne miejsca"<br><span style="font-style:normal;">Dziwny Pan ze Stocka, Internet</span></h4>
+					</div>
+					<div class="item">
+						<h4 id="opinion-text2">"Mam dwa słowa o tym serwisie... Nie mogę tu zamówić pizzy"<br><span style="font-style:normal;">Janusz Mateusz, entuzjasta kulinarny</span></h4>
+					</div>
+					<div class="item">
+						<h4 id="opinion-text3">"Przepraszam, kim pan jest?"<br><span style="font-style:normal;">Jakiś typ zagadnięty na skrzyżowaniu</span></h4>
+					</div>
+				</div>
+				<!-- Left and right controls -->
+				<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev" id="carousel-control">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next" id="carousel-control2">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container-fluid container-service" id="service">
+		<div class="service-box">
+			<div class="text-center" id="service-text">
+				<h2>USŁUGI</h2><br>
+				<h4>W zależności od potrzeb, oferujemy następujące opcje:</h4>
+			</div>
+			<div class="row" id="service-terms">
+				<div class="col-sm-4">
+					<div class="panel panel-default text-center" id="panel">
+						<div class="panel-heading" id="panel-heading-in">
+							<h1>gość</h1>
+						</div>
+						<div class="panel-body">
+							<p><strong>20</strong> Lorem</p>
+							<p><strong>15</strong> Ipsum</p>
+							<p><strong>5</strong> Dolor</p>
+							<p><strong>2</strong> Sit</p>
+							<p><strong>Endless</strong> Amet</p>
+						</div>
+						<div class="panel-footer"> 
+							<button class="btn btn-lg">stwórz dokument</button>
+						</div>
+					</div> 
+				</div> 
+				<div class="col-sm-4">
+					<div class="panel panel-default text-center" id="panel2">
+						<div class="panel-heading" id="panel-heading-in2">
+							<h1>użytkownik</h1>
+						</div>
+						<div class="panel-body">
+							<p><strong>50</strong> Lorem</p>
+							<p><strong>25</strong> Ipsum</p>
+							<p><strong>10</strong> Dolor</p>
+							<p><strong>5</strong> Sit</p>
+							<p><strong>Endless</strong> Amet</p>
+						</div>
+						<div class="panel-footer">
+							<button class="btn btn-lg">zaloguj się</button>
+						</div>
+					</div> 
+				</div> 
+				<div class="col-sm-4">
+					<div class="panel panel-default text-center" id="panel3">
+						<div class="panel-heading" id="panel-heading-in">
+							<h1>firmy</h1>
+						</div>
+						<div class="panel-body">
+							<p><strong>100</strong> Lorem</p>
+							<p><strong>50</strong> Ipsum</p>
+							<p><strong>25</strong> Dolor</p>
+							<p><strong>10</strong> Sit</p>
+							<p><strong>Endless</strong> Amet</p>
+						</div>
+						<div class="panel-footer">
+							<button class="btn btn-lg">napisz do nas</button>
+						</div>
+					</div> 
+				</div> 
+			</div>
+		</div>
+	</div>
+	
+	<div class="container-fluid container-contact" id="contact">
+		<div class="row">
+			<h2 class="text-center">KONTAKT</h2>
+			<div class="contact-info">
+				<div class="col-sm-5" id="contact-info-box">
+					<div class="row">
+						<div class="col-sm-12">
+							<h3 style="padding-bottom: 20px;">Jak nas znaleźć?</h3>
+							<p style="padding-bottom: 20px;">Napisz do nas, a odezwiemy się w ciągu 24 godzin.</p>
+							<p><span class="glyphicon glyphicon-map-marker"></span> Paperoo sp. z o.o.<br>&nbsp&nbsp&nbsp&nbsp ul. Najpiękniejsza 13<br>&nbsp&nbsp&nbsp&nbsp 30-330 Kraków</p>
+							<p><span class="glyphicon glyphicon-phone"></span> +0048 700 880 700</p>
+							<p><span class="glyphicon glyphicon-envelope"></span> info@paperoo.pl</p>
+						</div>
+						<div class="col-sm-12">
+							<div class="icn-link-box">
+								<a href="#"><img class="icn" src="assets/img/fb.png"></a>
+								<a href="#"><img class="icn" src="assets/img/inst.png"></a>
+								<a href="#"><img class="icn" src="assets/img/tw.png"></a>
+								<a href="#"><img class="icn" src="assets/img/yt.png"></a>
+								<a href="#"><img class="icn" src="assets/img/lin.png"></a>					
+							</div>
+						</div>
+					</div>
+				</div>
+				<form action="mailto:mateuszmsas@gmail.com" method="post" enctype="text/plain">
+					<div class="col-sm-7">
+						<div class="row">
+							<h3 style="padding-bottom: 20px;">Formularz kontaktowy</h3>
+							<div class="col-sm-6 form-group">
+								<label for="name">Imię</label>
+							  <input class="form-control" id="name" name="name" placeholder="wpisz tutaj swoje imię..." type="text" required>
+							</div>
+							<div class="col-sm-6 form-group">
+								<label for="email">Adres e-mail</label>
+							  <input class="form-control" id="email" name="email" placeholder="wpisz tutaj swój adres e-mail..." type="email" required>
+							</div>
+						  <div class="col-sm-12 form-group">
+								<label for="type">Typ wiadomości</label>
+							<select class="form-control" id="type" name="type" placeholder="wybierz rodzaj wiadomości..." type="text" required>
+							  <option value="australia">Opinia</option>
+							  <option value="canada">Sugestia</option>
+							  <option value="usa">Skarga</option>
+							</select>
+						  </div>
+							<div class="col-sm-12 form-group">
+							  <label for="comments">Wiadomość</label>
+							  <textarea class="form-control" id="comments" name="comments" placeholder="wpisz tutaj swoją wiadomość..." rows="6" required></textarea><br>
+								<input class="btn pull-right send" type="submit" value="Wyślij">
+							  <input class="btn pull-right clear" type="reset" value="Wyczyść">
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+	</div>
+	
+	<div class="container-fluid container-footer">
+		<div class="footer-box">
+			<div class="row">
+				<div class="col-sm-8 text-center newsletter">
+					<h4>Zapisz się do newsletter'a, aby być na bieżąco</h4>
+					<form class="form-inline">
+						<div class="input-group">
+							<input type="email" class="form-control" size="80" placeholder="wpisz tutaj swój adres e-mail..." required>
+							<div class="input-group-btn">
+								<button type="button" class="btn send">zapisz się</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="col-sm-4" id="footer-links">
+					<ul>
+						<li><a class="footer-link" href="#">Polityka Prywatności</a></li>
+						<li><a class="footer-link" href="#">Mapa strony</a></li>
+						<li><a class="footer-link" href="#">Regulamin</a>&nbsp;</li>
+						<li><a class="footer-link" id="myBtn1" style="cursor: pointer;">Logowanie</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 text-center" style="padding-top: 20px;">
+					<p><span class="glyphicon glyphicon-copyright-mark"></span> 2017 paperoo.pl Wszystkie prawa zastrzeżone</p>
+				</div>
+			</div>
+		</div>		
+	</div>
+	
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+
+	  <!-- Modal content -->
+		<div class="modal-content" id="log-box">
+			<div class="row">
+				<div class="col-sm-12">
+					<span class="close">&times;</span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6 text-center">
+					<button onclick="logIn()" style="width: auto;" class="login-btn">Logowanie</button>
+				</div>
+				<div class="col-sm-6 text-center">
+					<button onclick="signUp()" style="width: auto;" id="signup-btn">Rejestracja</button>
+				</div>
+			</div>
+			<div class="row" id="login-page" style="display: none;">
+				<div class="col-sm-12">
+					<form class="login-form">
+						<div class="container" style="width: inherit; padding-top: 30px;">
+							<div class="row">
+								<div class="col-sm-12">
+									<label><b>Adres e-mail</b></label><br>
+									<input class="form-control" type="text" placeholder="wpisz tutaj swój adres e-mail..." name="uname" required>
+								</div>
+								<div class="col-sm-12" style="padding-top: 10px;">
+									<label><b>Hasło</b></label><br>
+									<input class="form-control" type="password" placeholder="wpisz tutaj swoje hasło..." name="psw" required>
+								</div>
+								<div class="col-sm-12">
+									<div class="row">
+										<div class="col-sm-12 text-center" style="padding-top: 10px">
+											<div class="col-sm-6">
+												<input type="checkbox" checked="checked"> Zapamiętaj mnie
+											</div>
+											<div class="col-sm-6">
+												<span class="psw text-right">Zapomniałem <a href="#">hasła</a></span>
+											</div>
+										</div>
+										<div class="col-sm-12 text-center" style="padding-top: 10px">
+												<button type="submit" class="login-btn">Zaloguj się</button>
+										</div>
+										<div class="col-sm-12 text-center" style="padding-top: 20px">
+											<p>Albo:</p>
+											<a href="#"><img class="sicn" src="assets/img/fb.png"></a>
+											<a href="#"><img class="sicn" src="assets/img/tw.png"></a>
+											<a href="#"><img class="sicn" src="assets/img/lin.png"></a>						
+										</div>
+										<div class="col-sm-12 text-center" style="padding-top: 20px">
+											<p>Nie masz jeszcze konta? <a href="#" onclick="signUp()">Zarejestruj się</a></p>
+										</div>
+										<div class="col-sm-12 text-center" style="padding-top: 3px">
+											<p class="dsclmr">Logując się akceptujesz <a href="#">regulamin</a></p>	
+										</div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="row" id="signup-page" style="display: none;">
+				<div class="col-sm-12">
+					<form class="login-form">
+						<div class="container" style="width: inherit; padding-top: 30px;">
+							<div class="row">
+								<div class="col-sm-12">
+									<label><b>Adres e-mail</b></label><br>
+									<input class="form-control" type="text" placeholder="wpisz tutaj swój adres e-mail..." name="uname" required>
+								</div>
+								<div class="col-sm-12" style="padding-top: 10px;">
+									<label><b>Hasło</b></label><br>
+									<input class="form-control" type="password" placeholder="wpisz tutaj swoje hasło..." name="psw" required>
+								</div>
+								<div class="col-sm-12" style="padding-top: 10px;">
+									<label><b>Powtórz hasło</b></label><br>
+									<input class="form-control" type="password" placeholder="powtórz swoje hasło..." name="psw" required>
+								</div>
+								<div class="col-sm-12">
+									<div class="row">
+										<div class="col-sm-12 text-center" style="padding-top: 10px">
+												<input type="checkbox" checked="checked"> Zapamiętaj mnie
+										</div>
+										<div class="col-sm-12 text-center" style="padding-top: 20px">
+												<button type="submit" class="login-btn">Zarejestruj się</button>
+										</div>
+										<div class="col-sm-12 text-center" style="padding-top: 20px">
+											<p>Albo:</p>
+											<a href="#"><img class="sicn" src="assets/img/fb.png"></a>
+											<a href="#"><img class="sicn" src="assets/img/tw.png"></a>
+											<a href="#"><img class="sicn" src="assets/img/lin.png"></a>										
+										</div>
+										<div class="col-sm-12 text-center" style="padding-top: 20px">
+											<p class="dsclmr">Rejestrując się akceptujesz <a href="#">regulamin</a></p>	
+										</div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById('myBtn');
+var btn1 = document.getElementById('myBtn1');
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+btn1.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+function logIn() {
+    var x = document.getElementById('login-page');
+	var y = document.getElementById('signup-page');
+	
+    if (y.style.display === 'block') {
+        y.style.display = 'none';
+    } else {
+        if (x.style.display === 'none') {
+			x.style.display = 'block';
+		} else {
+		x.style.display = 'none';
+    	}	
+	}
+}
+function signUp() {
+	var x = document.getElementById('login-page');
+    var y = document.getElementById('signup-page');
+	
+    if (x.style.display === 'block') {
+        x.style.display = 'none';
+    } else {
+        if (y.style.display === 'none') {
+			y.style.display = 'block';
+		} else {
+		y.style.display = 'none';
+    	}	
+	}
+}
+	
+</script>
+</body>
+
+</html>

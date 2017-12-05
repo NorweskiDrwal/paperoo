@@ -1,0 +1,44 @@
+#title-container {
+	background: url(../img/title-tlo.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: 'Comfortaa', cursive;
+	margin-bottom: 0;
+	padding-top: 170px;
+	padding-bottom: 80px;
+}
+
+#create-btn {
+	background-color: #c6566e;
+	border: 0.4rem solid #e8eadc;
+	border-radius: 0.8rem;
+	color: #e8eadc;
+	font-size: 3rem;
+	padding: 0.5rem 2.5rem 0.1rem 2.4rem;	
+}
+
+#create-btn:hover {
+	background-color: #e8eadc;
+	color: #c6566e;
+}
+
+#logo-big {
+	height: auto;
+	max-width: 800px;
+	width: 100%;
+	margin-bottom: 60px;
+}
+
+
+@media(max-width: 600px) {
+	
+	#create-btn {
+		font-size: 1.5rem;
+		border: 0.2rem solid #e8eadc;
+	}
+	
+	#logo-big {
+		margin-bottom: 30px;
+	}
+}

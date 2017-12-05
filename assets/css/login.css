@@ -1,0 +1,83 @@
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+	color: #93859c;
+    left: 0;
+    top: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+#log-box {
+	background-color: #e8eadc;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fcf5d8;
+    margin: 3% auto; /* 15% from the top and centered */
+	max-width: 600px;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #c6566e;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.login-btn, #signup-btn {
+	background-color: #fcf5d8;
+	border: 2px solid #c6566e;
+	border-radius: 4px;
+	color: #c6566e;
+	padding: 5px;	
+}
+
+.login-btn:hover {
+	background-color: #c6566e;
+	border: 2px solid #fcf5d8;
+	color: #fcf5d8;
+}
+
+#signup-btn:hover {
+	background-color: #c6566e;
+	border: 2px solid #fcf5d8;
+	color: #fcf5d8;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+	display: inline-block;
+}
+
+.dsclmr {
+	font-size: 10px;
+}
+
+.sicn {
+	max-height: 60px;
+	padding: 10px;
+	max-width: 60px;
+}
+
+.sicn:hover {
+	box-shadow: 2px 2px 10px #93859c;
+}

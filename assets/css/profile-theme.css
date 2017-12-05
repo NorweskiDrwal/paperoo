@@ -1,0 +1,325 @@
+/*GENERAL STUFF*/
+* {
+	box-sizing: border-box;
+}
+a:hover, a:focus, a:active, a:visited, a:link {
+	text-decoration: none;
+}
+a:visited, a:active, a:focus, a:link {
+	color: #e8eadc;
+}
+nav {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+nav ul, nav li {
+	outline: 0;
+	margin: 0;
+	padding: 0;
+}
+
+/*PROFILE PAGE CONTENT*/
+.profileContent {
+	background-color: #e8eadc;
+	top: 0;
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+	width: 100%
+}
+.profileContentBox {
+	height: inherit;
+	padding-left: 250px;
+	padding-top: 60px;
+	width: inherit;
+}
+.contentStartContainer {
+	background: url('../img/title-tlo.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: 'Comfortaa', cursive;
+	color: #e8eadc;
+	height: 300px;
+	position:relative
+}
+.startBox {
+	height: inherit;
+	margin: 0 auto;
+	max-width: 900px;
+	width: 100%;
+}
+.startBoxText>h1 {
+	font-size: 30px;
+	margin: 0;
+	padding: 100px 0 30px 0;
+}
+.startBoxBtn {
+	padding: 20px 0;
+}
+
+/*PROFILE PAGE HEADER*/
+.profileHeader {
+	background-color: #c6566e;
+	display: inline-block;
+	height: 60px;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+.lowHIcn {
+	height: 60px;
+	padding: 10px;
+	width: 60px;
+}
+.lowHIcn:hover {
+	background-color: #B93E59;
+	cursor: pointer;
+}
+.menuBar:hover + .low {
+	background-color: #B93E59;
+	cursor: pointer;
+}
+.lowHLogo img {
+	display: table-cell;
+	height: 45px;
+	position: absolute;
+	padding-left: 70px;
+	padding-top: 15px;
+	vertical-align: middle;
+}
+.menuBar {
+		width: 40px;
+		height: 4px;
+		background-color: #fff;
+		border-radius: 4px;
+		margin: 7px 0;
+	}
+
+/*PROFILE PAGE SIDEBAR MENU*/
+.profileSidebar {
+	color: #fcf5d8;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*PROFILE PAGE REGULAR MENU*/
+.menuList {
+	background-color: #93859c;
+	border-right: 2px solid #c6566e;
+	bottom: 0;
+	font-size: 20px;
+	height: 100%;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	transition: width .1s linear;
+	width: 250px;
+}
+	#menuLogo {
+		padding: 0 41px;
+	}
+	#menuLogo:hover {
+		background-color: #c6566e;
+}
+.menuList li>a {
+	border-spacing: 0;
+	text-decoration:none;
+}	
+.menuList .menuIcn {
+	display: table-cell;
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
+}
+.menuList .menuText {
+	display: table-cell;
+	position: relative;
+	vertical-align: middle;
+	width: 200px;
+}
+.menuIcn {
+	height: 70px;
+	padding: 20px 20px 20px 10px;
+	width: 70px;
+}
+.menuIcn:hover + .menuText {
+	color: pink;
+}
+.menuText {
+	text-align: center;
+}
+.menuText:hover {
+	color: pink;
+}
+.menuItem:hover {
+	background-color: #81718C;
+	color: #fff;
+	transition-delay: 0.09s;
+}
+.menuList>ul>li#menuLogout {
+		bottom: 0;
+		left: 0;
+		position: absolute;
+}
+
+/*FOR SCREEN SMALLER THAN 768px*/
+@media screen and (max-width: 768px) {
+	
+	.profileMenu {
+		display: none;
+	}
+	.profileContentBox {
+		padding-left: 60px;
+	}
+	.startBoxText>h1 {
+		font-size: 20px;
+		margin: 0;
+		padding: 100px 0 30px 0;
+	}	
+	
+	/*PROFILE PAGE WRAP MENU*/
+	.menuWrapList {
+		background-color: #93859c;
+		border-right: 2px solid #c6566e;
+		bottom: 0;
+		font-size: 17px;
+		height: 100%;
+		left: 0;
+		overflow: hidden;
+		position: absolute;
+		top: 0;
+		transition:width .1s linear;
+		width: 60px;
+		z-index:1000;
+	}
+	.menuWrapList li {
+		display: block;
+		position: relative;
+		width: 200px;
+	}
+	.menuWrapList li>a {
+		border-collapse: collapse;
+		border-spacing: 0;
+		display: table;
+		position: relative;
+		text-decoration:none;
+		transition:all .1s linear;
+	}	
+	.menuWrapList .menuWrapIcn {
+		display: table-cell;
+		height: 40px;
+		position: relative;
+		text-align: center;
+		vertical-align: middle;
+		width: 60px;
+	}
+	.menuWrapList .menuWrapText {
+		display: table-cell;
+		position: relative;
+		vertical-align: middle;
+		width: 200px;
+	}
+	.menuWrapList:hover {
+		overflow: visible;
+		transition: width .1s linear;
+		width: 200px;
+	}
+	.menuWrapIcn {
+		padding: 10px;
+	}
+	.menuWrapIcn:hover + .menuWrapText {
+		color: pink;
+	}
+	.menuWrapText {
+		text-align: center;
+	}
+	.menuWrapText:hover {
+		color: pink;
+	}
+		#menuWrapIcn {
+			background-color: #c6566e;
+		}
+		#menuWrapLogo {
+			background-color: #c6566e;
+			height: 60px;
+			padding: 10px 13px;
+			width: auto;
+		}
+	.menuWrapItem {
+		padding: 10px 0;
+	}
+	.menuWrapItem:hover {
+		background-color: #81718C;
+		color: #fff;
+		transition-delay: 0.09s;
+	}
+	.menuWrapList>ul>li#menuWrapLogout {
+		bottom: 0;
+		left: 0;
+		position: absolute;
+	}	
+}
+
+@media screen and (max-height: 500px) {
+	.profileSidebar {
+		display: none;
+	}
+	.profileContentBox {
+		padding-left: 0;
+	}
+	.lowHIcn {
+		display: table-cell;
+		position: absolute;
+	}
+	
+	.lowHIcn:hover .profileSidebar{
+		display: block;
+		position: relative;	
+	}
+	
+	.menuLowHBox {
+		display: flex;
+		height: 60px;
+		position: relative;
+		width: inherit;
+	}
+	
+	.menuLowH {
+		background-color: #93859c;
+		display: none;
+		position: absolute;
+		width: inherit;
+		z-index: 99999;
+	}
+	.menuLowH a {
+		display: inline-block;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 15px;
+		padding: 20px;
+		text-decoration: none;
+	}
+	.menuLowH a:hover {
+		background-color: #81718C;
+	}
+	.menuLowHBox:hover .menuLowH {
+		display: inline-block;
+		position: relative;
+	}
+		#lowHLogoMenu {
+			height: 30px;
+			padding-left: 20px;
+			padding-right: 20px;
+			cursor: pointer;
+			width: auto;
+		}
+}
+
+@media screen and (min-height: 500px) {
+	#lowHLogo {
+		display: none;
+	}
+}

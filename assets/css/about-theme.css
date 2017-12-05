@@ -1,0 +1,94 @@
+@media screen and (max-width: 768px) {
+    .col-sm-7 {
+        text-align: center;
+        margin: 25px 0;
+    }
+}
+
+.container-about {
+	background: url('../img/about-tlo.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 70px 0 70px 0;
+}
+
+#about {
+	color: #93859c;
+	display: block;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	margin: auto;
+	max-width: 1200px;
+	text-align: justify;
+	width: 100%;
+}
+
+#video {
+	height: 400px;
+	max-width: 700px;
+	width: 100%;
+}
+
+#video-box {
+	padding: 25px;
+
+}
+
+.carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #c6566e;
+	width: 0;
+}
+
+#carousel-control:hover, #carousel-control2:hover {
+	color: #c6566e;
+}
+
+#carousel-control:focus, #carousel-control2:focus {
+	color: #c6566e;
+}
+
+.carousel-indicators li {
+    background-color: #e8eadc;
+}
+
+.carousel-indicators li.active {
+    background-color: #c6566e;
+}
+
+.item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+}
+
+.item span {
+    font-style: normal;
+}
+
+#carousel-indicators li{
+    border: 1px solid #c6566e;
+}
+
+.container-carousel {
+	background-color: #d2d2dc;
+}
+
+#container-carousel {
+	color: #c6566e;
+	display: block;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	margin: auto;
+	max-width: 1200px;
+	padding-bottom: 40px;
+	padding-top: 50px; 
+	width: 100%;
+}
+
+#opinion-text, #opinion-text2, #opinion-text3 {
+	margin: 30px 0 70px 0;
+}
